@@ -1,0 +1,39 @@
+{
+    "name": "zhihe/restricted-posts",
+    "description": "Allow post authors to mark their posts as restricted content",
+    "keywords": [
+        "flarum",
+        "extension",
+        "posts",
+        "restricted",
+        "content"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.8.0",
+        "php": "^8.1"
+    },
+    "authors": [
+        {
+            "name": "Zhihe Team",
+            "email": "dev@zhihe.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Zhihe\\RestrictedPosts\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Zhihe Restricted Posts",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-lock",
+                "color": "#e74c3c",
+                "backgroundColor": "#fff"
+            }
+        }
+    }
+}

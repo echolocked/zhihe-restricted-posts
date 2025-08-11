@@ -1,0 +1,53 @@
+// Restricted badge in post header - positioned to far right (like primary badge)
+.Post-header {
+  position: relative;
+  
+  .item-restrictedBadge {
+    position: absolute;
+    top: 50%;
+    right: 32px; // Leave space for primary badge (20px width + 8px margin + 4px spacing)
+    transform: translateY(-50%);
+    
+    .RestrictedBadge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      background: #f39c12;
+      color: white;
+      border-radius: 3px;
+      cursor: help;
+      
+      i {
+        font-size: 11px;
+      }
+      
+      &:hover {
+        background: #e67e22;
+      }
+    }
+  }
+  
+  // Adjust primary badge position when both badges are present
+  .item-restrictedBadge ~ .item-primaryBadge {
+    .PrimaryBadge {
+      // Primary badge stays at right: 8px (from zhihe-primary-posts CSS)
+    }
+  }
+}
+
+.Post {
+  &.Post--restricted {
+    .Post-body {
+      opacity: 0.6;
+      border-left: 3px solid #f39c12;
+      padding-left: 15px;
+    }
+  }
+}
+
+// Style for restricted checkbox in composer
+.Form-group .checkbox input[type="checkbox"]:checked + span::after {
+  content: " 🔒";
+}

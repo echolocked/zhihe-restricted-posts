@@ -1,0 +1,7 @@
+zhihe-restricted-posts:
+  forum:
+    restricted_post: "Restricted Post"
+    mark_restricted: "Mark as Restricted"
+    unmark_restricted: "Unmark Restricted"
+    restricted_checkbox: "Restricted"
+    restricted_badge: "This post contains restricted content"

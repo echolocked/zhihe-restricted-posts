@@ -1,0 +1,7 @@
+zhihe-restricted-posts:
+  forum:
+    restricted_post: "限制内容"
+    mark_restricted: "标记为限制内容"
+    unmark_restricted: "取消限制标记"
+    restricted_checkbox: "限制内容"
+    restricted_badge: "此帖子包含限制内容"

@@ -102,7 +102,7 @@ app.initializers.add('zhihe-restricted-posts', () => {
           app.translator.trans('zhihe-restricted-posts.forum.restricted_checkbox')
         ])
       ]),
-      10
+      9  // Before primary checkbox (10) to appear first
     );
   });
 
@@ -122,7 +122,7 @@ app.initializers.add('zhihe-restricted-posts', () => {
           app.translator.trans('zhihe-restricted-posts.forum.restricted_checkbox')
         ])
       ]),
-      10
+      9  // Before primary checkbox (10) to appear first
     );
   });
 

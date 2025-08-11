@@ -48,6 +48,23 @@
 }
 
 // Style for restricted checkbox in composer
-.Form-group .checkbox input[type="checkbox"]:checked + span::after {
-  content: " 🔒";
+.Form-group .checkbox {
+  margin-right: 16px; // Add spacing between checkboxes
+  
+  input[type="checkbox"]:checked + span::after {
+    content: " 🔒";
+  }
+}
+
+// Ensure proper spacing between composer checkboxes
+.Composer-header {
+  .Form-group {
+    display: inline-block;
+    margin-right: 16px;
+    margin-bottom: 0;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

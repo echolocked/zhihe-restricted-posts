@@ -2,8 +2,8 @@
 js/node_modules/
 js/package-lock.json
 
-# Build artifacts
-js/dist/
+# Build artifacts - keep dist for production
+# js/dist/
 
 # IDE and system files
 .vscode/
